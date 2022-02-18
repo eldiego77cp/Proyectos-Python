@@ -1,14 +1,17 @@
 import turtle
+from turtle import Turtle, Shape, Screen
 
 # Canvas
-screen = turtle.Screen()
-screen.bgcolor("white")
+screen = Screen()
+screen.bgcolor('white')
 
 # Turtles
 
-t_1 = turtle.Turtle()
-t_2 = turtle.Turtle()
-t_3 = turtle.Turtle()
+numPlayers = 3
+
+t_1 = Turtle()
+t_2 = Turtle()
+t_3 = Turtle()
 
 t_1.shape("turtle")
 t_1.color("red")
