@@ -23,20 +23,23 @@ from turtle import Turtle, RawTurtle, TurtleScreenBase, TurtleScreen, TurtleGrap
 #for i in range(1, int(input()) + 1): 
 #    print(i, sep='', end='')
 
-x = int(input())
-y = int(input())
-z = int(input())
-n = int(input())
-arrayItem = []
-arrayList = []
+#x = int(input())
+#y = int(input())
+#z = int(input())
+#n = int(input())
+#arrayItem = []
+#arrayList = []
+#
+#for x1 in range(0, x+1):
+#    for y1 in range(0, y+1):
+#        for z1 in range(0, z+1):
+#            arrayItem.append([x1, y1, z1])
+#            if sum(arrayItem[0]) != n:
+#                arrayList.append([x1, y1, z1])
+#            arrayItem = []
+#
+#print(arrayList)
 
-for x1 in range(0, x+1):
-    for y1 in range(0, y+1):
-        for z1 in range(0, z+1):
-            arrayItem.append([x1, y1, z1])
-            if sum(arrayItem[0]) != n:
-                arrayList.append([x1, y1, z1])
-            arrayItem = []
+a = 10-10*10+10
 
-print(arrayList)
-
+print(a) 
