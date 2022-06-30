@@ -39,13 +39,15 @@ help (os)
 
 # Especiales de Python (diseñados por terceros)
 
-# matplotlib
-# numpy
-# pandas
-# pillow
-# pygame
-# scify
-# simple-salesforce
-# tensor
-# wheel
+# matplotlib (https://matplotlib.org/)
+# numpy (https://numpy.org/)
+# pandas (https://pandas.pydata.org/)
+# pillow (https://pillow.readthedocs.io/)
+# pygame (https://www.pygame.org/)
+# pypdf2 (https://pypdf2.readthedocs.io/en/latest/)
+# scify (https://scipy.org/)
+# seaborne (https://seaborn.pydata.org/)
+# simple-salesforce (https://simple-salesforce.readthedocs.io/en/latest/)
+# tensorflow (https://www.tensorflow.org/install/pip?hl=es-419) (3.6 a 3.9)
+# wheel (https://wheel.readthedocs.io/en/stable//)
 
