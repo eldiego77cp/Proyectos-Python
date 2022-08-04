@@ -1,45 +1,34 @@
-from turtle import Turtle, RawTurtle, TurtleScreenBase, TurtleScreen, TurtleGraphicsError
+import pandas as pd
+import openpyxl
 
-#n = int(input())
-#list1 = []
-#    
-#for x in range(n):
-#    list1.append(x)
+df = pd.read_excel('C:/Users/Alejandro/Downloads/my_df.xlsx')
+
+#print(len(df)+1)
 #
-#print(list1)
-#        
-#if n >= 1 and n <= 20:
-#    for number in list1:
-#        sqr = number ^ 2
-#        print(sqr)
-
-#n = int(input())
-#string1 = ''
-#if n >= 1 and n <= 150:
-#    for x in range(1, n+1):
-#        string1 += str(x)
-#    print(string1)
-
-#for i in range(1, int(input()) + 1): 
-#    print(i, sep='', end='')
-
-#x = int(input())
-#y = int(input())
-#z = int(input())
-#n = int(input())
-#arrayItem = []
-#arrayList = []
+#print(df['total_amount'].head(5))
 #
-#for x1 in range(0, x+1):
-#    for y1 in range(0, y+1):
-#        for z1 in range(0, z+1):
-#            arrayItem.append([x1, y1, z1])
-#            if sum(arrayItem[0]) != n:
-#                arrayList.append([x1, y1, z1])
-#            arrayItem = []
+#print(df['total_amount'].loc[0])
 #
-#print(arrayList)
+#tendencia = []
+#for index in range(0, len(df), 1):
+#    if index == 0:
+#        tendencia.append(df['total_amount'].loc[index]*1.05)
+#        tendencia.append(df['total_amount'].loc[index]*0.9)
+#    else:
+#        tendencia.append(df['total_amount'].loc[index]*0.9)
+#
+#print(tendencia)
 
-a = 10-10*10+10
+df4 = (df.groupby(by='week').sum()).sort_values('total_amount',ascending=False)
+print(len(df4.index))
+print(df4['total_amount'])
 
-print(a) 
+tendencia = []
+for index in df4.index:
+    if index == 1:
+        tendencia.append(int(df4['total_amount'].loc[index]*1.05))
+        tendencia.append(int(df4['total_amount'].loc[index]*0.9))
+    else:
+        tendencia.append(int(df4['total_amount'].loc[index]*0.9))
+
+print(tendencia)
